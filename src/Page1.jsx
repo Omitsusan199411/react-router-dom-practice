@@ -6,7 +6,8 @@ export const Page1 = () => {
   const history = useHistory();
   console.log(history);
 
-  const onClickDetailsA = () => history.push("/page1/detailA");
+  const onClickDetailsA = () =>
+    history.push({ pathname: "/page1/detailA", state: arr });
 
   return (
     <div>
